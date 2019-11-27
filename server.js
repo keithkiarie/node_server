@@ -9,4 +9,4 @@ app.use(express.static(path.join(__dirname, folder_name)));
 
 const PORT = process.env.port || 5000;
 
-app.listen(PORT => console.log(`Server started on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
